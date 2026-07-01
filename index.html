@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonFlow • Product Launch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #59eee4 0%, #6f1de9 100%);
+        }
+        @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animation-delay-300 {
+    animation-delay: 300ms;
+}
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6">
+                <span class="text-emerald-400">●</span>
+                <span class="text-sm font-medium">Now in Early Access</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter mb-6 animate-fade-in">
+                Your Business.<br>Our Customers.
+            </h1>
+
+            <p class="text-xl text-zinc-300 max-w-2xl mx-auto mb-10 animate-fade-in animation-delay-300">
+                Building relationships that will shape the future of industry.
+            </p>
+
+            <div class="flex items-center justify-center gap-4">
+                <button onclick="alert('🎉 Thanks for clicking! (this is just a demo)')"
+                        class="bg-white text-black px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-zinc-100 hover:scale-105 active:scale-95 transition-all duration-200">
+                    Let's Chat
+                </button>
+                <button class="border border-white/30 hover:bg-white/10 px-8 py-4 rounded-2xl font-semibold text-lg transition">
+                    Watch Demo
+                </button>
+            </div>
+
+            <p class="text-sm text-zinc-400 mt-6">Join 12,458 others • No credit card required</p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-24 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Everything you need. Nothing you don't.</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-800 p-8 rounded-3xl hover:scale-105 transition">
+                    <i class="fa-solid fa-bolt text-4xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Lightning Fast</h3>
+                    <p class="text-zinc-400">Built for speed. No more waiting for slow tools.</p>
+                </div>
+                <div class="bg-zinc-800 p-8 rounded-3xl hover:scale-105 transition">
+                    <i class="fa-solid fa-palette text-4xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Beautiful by Default</h3>
+                    <p class="text-zinc-400">Stunning design that makes your team proud.</p>
+                </div>
+                <div class="bg-zinc-800 p-8 rounded-3xl hover:scale-105 transition">
+                    <i class="fa-solid fa-users text-4

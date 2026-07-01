@@ -23,13 +23,27 @@
 .animation-delay-300 {
     animation-delay: 300ms;
 }
+        @keyframes heroFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content {
+            animation: heroFadeIn 1s ease-out forwards;
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
     <!-- Hero -->
     <section class="hero-bg min-h-screen flex items-center">
-        <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+        <div class="max-w-7xl mx-auto px-6 py-24 text-center hero-content">
             <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6">
                 <span class="text-emerald-400">●</span>
                 <span class="text-sm font-medium">Now in Early Access</span>
